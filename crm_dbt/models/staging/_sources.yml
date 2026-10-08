@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_crm
+    schema: main
+    tables:
+      - name: raw_accounts
+      - name: raw_products
+      - name: raw_sales_pipeline
+      - name: raw_sales_teams

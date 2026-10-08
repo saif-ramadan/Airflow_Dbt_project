@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: fct_sales_pipeline
+    description: "جدول الحقائق الرئيسي لمسار المبيعات"
+    columns:
+      - name: opportunity_id
+        tests:
+          - unique
+          - not_null
+
+      - name: account_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_accounts')
+                field: account_id
+
+      - name: product_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_id
+
+      - name: team_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_sales_teams')
+                field: team_id

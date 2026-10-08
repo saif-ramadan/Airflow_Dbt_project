@@ -1,0 +1,46 @@
+# Environment variables
+
+.env
+.env.*
+!.env.example
+
+# Python
+
+**pycache**/
+*.py[cod]
+venv/
+.venv/
+
+# Airflow
+
+logs/
+airflow-webserver.pid
+airflow.cfg
+airflow.db
+webserver_config.py
+
+# Astro
+
+.astro/
+astro/
+
+# DuckDB
+
+*.duckdb
+*.duckdb.wal
+*.duckdb.tmp
+
+# dbt
+
+target/
+dbt_packages/
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS
+
+.DS_Store
+Thumbs.db

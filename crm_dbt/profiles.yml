@@ -1,0 +1,6 @@
+crm_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /usr/local/airflow/crm_dw.duckdb
