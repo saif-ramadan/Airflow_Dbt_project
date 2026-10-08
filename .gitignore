@@ -44,3 +44,4 @@ dbt_packages/
 
 .DS_Store
 Thumbs.db
+.git/
